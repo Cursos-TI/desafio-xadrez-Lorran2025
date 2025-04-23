@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-int main() {
+int main(){
+
     int i;
+    int movimentoCompleto = 1;
 
     //Movimentação da torre
     i = 1;
@@ -22,7 +24,17 @@ int main() {
     for (i = 1; i <= 8; i++)
     {
         printf("Rainha: Esquerda \n");
-    }
 
+    }
+    
+    //Movimentação do cavalo
+    while (movimentoCompleto--)
+    {
+        for (int i = 1; i <= 2; i++){
+            printf("Cavalo: Cima \n");
+        } 
+            printf("Cavalo: Direita \n");
+    }
+    
     return 0;
 }
